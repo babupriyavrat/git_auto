@@ -1,6 +1,5 @@
 Here's the complete `README.md` file with all the instructions and details:
 
-```markdown
 # Repository Initialization Script
 
 This script automates the process of initializing a Git repository, creating a `.gitignore` file from a template, adding files to the repository, and pushing them to a remote GitHub repository. It also handles large files using Git LFS and allows users to skip specific folders during the `git add` process.
