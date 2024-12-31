@@ -30,11 +30,16 @@ This script automates the process of initializing a Git repository, creating a `
 2. **Navigate to the Script Directory**: Change to the directory containing the script.
    ```bash
    cd yourrepository
+   mkdir secrets; cd secrets; nano config.json
    ```
+   copy+paste your GIT PAT Key here.
+   {"username":"YOUR_GITHUB_ID", "pat_key":"YOUR_PAT_KEY"}
 
-3. **Ensure `.gitignore_template` Exists**: Make sure there is a `.gitignore_template` file in the current directory. This file should contain the patterns for files and folders to be ignored by Git.
+   You can create the PAT KEY from Github account > Settings > DeveLoper Settings > Personal Access Tokens.
 
-4. **Run the Script**: Execute the script.
+4. **Ensure `.gitignore_template` Exists**: Make sure there is a `.gitignore_template` file in the current directory. This file should contain the patterns for files and folders to be ignored by Git.
+
+5. **Run the Script**: Execute the script.
    ```bash
    ./git_init.sh  # for simple features (1,2 and 6)
    ./git_comprehensive_init.sh # for all features
